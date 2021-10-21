@@ -8,6 +8,9 @@
   <h2>Teaser Video</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/-F5zdLztlrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+   <h2>Main Demo</h2>
+  <iframe src="https://player.vimeo.com/video/637551489" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  
   <h3>Related Publications</h3>
   <ul>
      <li>Naja I., Markovic M., Edwards P., Cottrill C. (2021) A Semantic Framework to Support AI System Accountability and Audit. In: Verborgh R. et al. (eds) The Semantic Web. ESWC 2021. Lecture Notes in Computer Science, vol 12731. Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-77385-4_10">https://doi.org/10.1007/978-3-030-77385-4_10</a> </li>
@@ -21,50 +24,6 @@
     <li><a href="https://github.com/RAINS-UOA">Project GITHUB</a></li>
     
   </ul>
-  
-  
-  <h2>Creating Accountability Plan</h2>
-  
-  <ul>
-  <li>0:00 - 3:00  Creating individual steps of the Accountability Plan (Implementation Stage) for capturing information about the produced ML model. The steps cover the same information that is captured by the Model Card Toolkit.</li>
-  <li>3:00 - 8:12  Enriching the plan with description of input and output variables for each individual step. Human validated constrain is defined (6:50 - 7:20). A user completing accountability trace form will have to manually answer whether this constraint has been satisfied. </li>
-  <li >8:12 - 8:50  Constructing SHACL constraint using the build in template to require information element rains:Limitation to be provided in the part of the accountability trace describing the implemented model. </li>
-  <li >8:50 - 10:09  The plan description is completed after required input and out variables are defined for the model evaluation.</li>
-  </ul>
-  
-  <iframe src="https://player.vimeo.com/video/567401809" width="1280" height="720" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen  title="Creating Accountability Plan"></iframe>
-  
-  <h2>Creating Accountability Trace Using Manual Interface</h2>
-    
-    <ul>
-  <li>0:00 - 0:28  Accessing the manual input interface for creating accountability trace describing the implementation stage. </li>
-  <li>0:28 - 1:19  Example input data for a single implementation step with human-validated constraint (i.e., it is not possible to evaluate this constraint automatically and thus it has to be completed by a human)</li>
-  <li >1:19 - 3:39 Example input data for a single step with one output variable describing the implemented model. The information is a collection including two information elements describing the intended use case and a risk associated with this model.  </li>
-   </ul>
-    
-    <iframe src="https://player.vimeo.com/video/567423507" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="Creating Accountability Trace Using Manual Interface"></iframe>
-  
-  <h2>Model Card Data Converter</h2>
-  <p> Thsi video demostrates the usage of a Rains Model Card Data Converter which produces accountability trace from data captured by Google's Model Card Toolkit. The example is based on the official <a href="https://github.com/tensorflow/model-card-toolkit/blob/master/model_card_toolkit/documentation/examples/MLMD_Model_Card_Toolkit_Demo.ipynb">Model Card toolkit example</a> <p/>
-<ul>
-  <li>0:00 - 1:56  An overview of the code for training Keras DNN classifier (part of the original example)</li>
-  <li>1:56 - 2:46  An overview of the code for producing Model Card (part of the original example)</li>
-  <li style="color:red">2:46 - 3:53  An overview of the code for producing accountability trace from Model Cards with a failed constraint check (Rains contribution)</li>
-  <li style="color:red">3:53 - 5:18  A process of adding the information about license to the model card and re-creating the accountability trace (Rains contribution)</li>
-  </ul>
-  <iframe src="https://player.vimeo.com/video/567062721" width="1280" height="720" frameborder="0" allow=" fullscreen" allowfullscreen></iframe>
- 
-      <h2>Auditing Accountability Knowledge Graph</h2>
-     <ul>
-  <li>0:00 - 0:14  Accessing the audit manager whcih currently includes four different views that can be used to explore the data. </li>
-  <li>0:14 - 1:06  An overview of the agent-centric view. Only those actions that a particular agent is accountable for are displayed after clicking on the relevant agent (orange box). Further activity details (e.g., start and end date) and details of the outputs (e.g., individual information elements recorded) in the accountability trace produces can be explored after clicking on the individual items. </li>
-  <li >1:06 - 1:29 The process-centric view focusses on all the activities (accountable actions) recorded in accountability traces. The additional information associated with individual elements can be explored in the same way as in the agent-centric view.  </li>
-  <li >1:06 - 2:21 The entity-centric view focusses on all the accountable results recorded in the accountability trace (i.e., entity collections corresponding to the variables defined in the plan). In addition to the agent-centric and process-centric view the user can explore the derivation and influence path of individual elements. For example, if a trained model is a result of an activity that used training dataset then the dataset would appera on the derivation path of the model and in the same way th emodel would appear on the influence path of the dataset.  </li>
-  <li> The Model card view jsut visualises the data in the same form as the Model Card generated by the Modle Card toolkit.  
-    </ul>
-    
-    <iframe src="https://player.vimeo.com/video/567494731" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="Viewing Accountability Knowledge Graph"></iframe>
-  
     
     </body>
 </html>
